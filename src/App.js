@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from './components/Header';
 
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>asd</h1>
+        <Header text='TO DO LIST' />
       </div>
     )
   }
