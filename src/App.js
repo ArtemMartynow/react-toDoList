@@ -10,7 +10,6 @@ class App extends React.Component {
       </div>
     )
   }
-  Click() {alert('asd')}
 }
 
 export default App
