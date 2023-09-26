@@ -1,0 +1,27 @@
+form {
+    margin-right: 2%;
+    width: 45%;
+    text-align: end;
+    input {
+        width: 64%;
+        height: 52px;
+        outline: none;
+        padding-left: 20px;
+        background: #453a3a;
+        color: #c1baba;
+        border: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    button {
+        width: 25%;
+        height: 54px;
+        border: 0;
+        color: #c1baba;
+        background: #453a3a;
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        cursor: pointer;
+    }
+}

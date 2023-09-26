@@ -4,6 +4,7 @@ import App from './App'
 import './scss/style.scss'
 import './scss/header.scss'
 import './scss/task.scss'
+import './scss/addTask.scss'
 
 
 const app = ReactDomClient.createRoot(document.getElementById('root'))
