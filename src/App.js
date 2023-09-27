@@ -16,12 +16,13 @@ class App extends React.Component {
             ]
         }
         this.addTask = this.addTask.bind(this)
+        this.deleteTask = this.deleteTask.bind(this)
     }
     render() {
     return (
       <div className='app'>
         <Header text='TO DO LIST' />
-        <Tasks tasks={this.state.tasks} />
+        <Tasks tasks={this.state.tasks} deleteTask={this.deleteTask} />
         <AddTask addTask={this.addTask} />
       </div>
     )
@@ -30,7 +31,13 @@ class App extends React.Component {
   addTask(Task) {
     const id = this.state.tasks.length + 1
     this.setState({ tasks: [...this.state.tasks, {id, ...Task}] })
-}
+  }
+
+  deleteTask(id) {
+    this.setState({
+        tasks: this.state.tasks.filter((el) => el.id !== id)
+    })
+  }
 
 }
 
