@@ -10,9 +10,14 @@ class AddTask extends React.Component {
     }
   render() {
     return (
-      <form>
+      <form ref={(el) => this.myForm = el}> 
         <input placeholder='your task' onChange={(text) => {this.setState({ title: text.target.value })}} />
-        <button type='button' onClick={() =>(this.props.addTask({title: this.state.title}))}>add task</button>
+        <button type='button' onClick={() => {
+            this.myForm.reset()
+            this.props.addTask({
+                title: this.state.title
+            })}
+        }>add task</button>
       </form>
     )
   }
