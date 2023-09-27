@@ -1,12 +1,9 @@
 .tasks {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 120px;
     .task {
-        width: 45%;
         background: #453a3a;
         margin-bottom: 30px;
-        margin-left: 2%;
+        margin-left: 5%;
         h1 {
             line-height: 80px;
             font-size: 20px;

@@ -11,7 +11,6 @@ class Tasks extends React.Component {
               {this.props.tasks.map((el) => (
                   <Task key={el.id} task={el} />
                   ))}
-                  <AddTask />
           </div>
           )
       } else {
