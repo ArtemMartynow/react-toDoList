@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineClose } from "react-icons/ai"
 
 
 class AddTask extends React.Component {
@@ -17,7 +18,7 @@ class AddTask extends React.Component {
             this.props.addTask({
                 title: this.state.title
             })}
-        }>add task</button>
+        }><AiOutlineClose className='add-icon' /></button>
       </form>
     )
   }

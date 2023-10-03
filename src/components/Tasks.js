@@ -15,7 +15,7 @@ class Tasks extends React.Component {
       } else {
         return (
             <div className='tasks'>
-                <h1>NO TASKS</h1>
+                <h1 className='no-tasks'>NO TASKS</h1>
             </div>
             )
       }
