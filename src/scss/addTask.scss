@@ -29,6 +29,13 @@ form {
         background: #587c4b;
         border-radius: 35px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            box-shadow: 0px 0px 10px 0px #587c4b;
+        }
+        &:active {
+            transform: scale(0.85);
+        }
     }
     .add-icon {
         transform: rotate(45deg);

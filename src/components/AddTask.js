@@ -15,7 +15,7 @@ class AddTask extends React.Component {
         <input placeholder='your task' onChange={(text) => {this.setState({ title: text.target.value })}} />
         <button type='button' onClick={() => {
           if(this.state.title === '') {
-            return
+            return alert('enter your task')
           } else {
             this.myForm.reset()
             this.props.addTask({
