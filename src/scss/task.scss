@@ -11,10 +11,42 @@
     .task {
         background: #465566;
         margin-bottom: 15px;
-        width: 440px;
+        width: 425px;
         margin-left: calc(50% - 232px);
         position: relative;
         padding: 15px;
+        height: 30px;
+        overflow: hidden;
+        padding-right: 30px;
+        .circle-done {
+            display: block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgb(64, 190, 104);
+            border-radius: 30px;
+            cursor: pointer;
+            padding-left: 1px;
+            padding-top: 1px;
+            color: rgb(64, 190, 104);
+            position: absolute;
+            right: 5px;
+            bottom: calc(50% - 11px);
+        }
+        .circle-done-active {
+            display: block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgb(64, 190, 104);
+            border-radius: 30px;
+            cursor: pointer;
+            padding-left: 1px;
+            padding-top: 1px;
+            background: rgb(64, 190, 104);
+            color: aliceblue;
+            position: absolute;
+            right: 5px;
+            bottom: calc(50% - 11px);
+        }
         h1 {
             line-height: 25px;
             font-size: 18px;
@@ -37,7 +69,3 @@
     border-radius: 20px;
     border: 3px solid #465566;
   }
-
-.done {
-    font-size: 40px;
-}

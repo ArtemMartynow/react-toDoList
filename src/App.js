@@ -9,10 +9,7 @@ class App extends React.Component {
         super(props)
         this.state = {
             tasks: [
-                {
-                    id: 1,
-                    title: 'asdsaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa',
-                },
+                
             ]
         }
         this.addTask = this.addTask.bind(this)
