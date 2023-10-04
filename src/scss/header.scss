@@ -5,8 +5,35 @@ header {
     position: fixed;
     width: 250px;
     border-radius: 50px;
-    margin-left: calc(50% - 125px);
-    h1 {
-        padding: 10px 0;
+    margin-left: calc(50% - 145px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0 20px;
+    .date-number {
+        font-size: 40px;
+        width: 41px;
+        line-height: 45px;
+        grid-area: 1 / 1 / 3 / 2;
+    }
+    .date-month {
+        width: 36px;
+        line-height: 25px;
+        font-size: 18px;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .date-year {
+        width: 40px;
+        line-height: 17px;
+        font-size: 18px;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .date-day {
+        font-size: 25px;
+        width: 106px;
+        line-height: 45px;
+        grid-area: 1 / 4 / 3 / 5;
     }
 }

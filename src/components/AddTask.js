@@ -14,10 +14,16 @@ class AddTask extends React.Component {
       <form ref={(el) => this.myForm = el}> 
         <input placeholder='your task' onChange={(text) => {this.setState({ title: text.target.value })}} />
         <button type='button' onClick={() => {
+          if(this.state.title === '') {
+            return
+          } else {
             this.myForm.reset()
             this.props.addTask({
                 title: this.state.title
-            })}
+            })
+            return this.setState({title: ''})
+          }
+          }
         }><AiOutlineClose className='add-icon' /></button>
       </form>
     )
